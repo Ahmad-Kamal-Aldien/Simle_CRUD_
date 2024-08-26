@@ -1,0 +1,22 @@
+.category,.product,.showtable{
+    background-color: #737272;
+    margin: 10px;
+}
+body {
+    background-image: url("/Image/pexels-karolina-grabowska-4033328.jpg");
+    /* background-image: url("/Image/pexels-karolina-grabowska-5632386.jpg"); */
+
+
+
+   }
+   .dataTables_filter label{
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   }
+   .dataTables_wrapper .dataTables_filter input {
+   
+
+ 
+    border: 3px solid black;
+  }

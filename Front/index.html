@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <!-- header -->
+
+    <header class="">
+<h2 class="text-primary text-center mt-1">CRUD</h2>
+    </header><!-- header -->
+    <main><!-- main --> 
+        <div class="container"> <!-- container -->   
+<div class="category row  p-2"><!-- category -->
+    <div class="col-6">
+        <label >Choose Category</label>
+        <select class="form-control" id="catlist">
+        </select>
+    </div>
+<div class="col-6">
+    <label >Enter Category</label>
+    <input type="text" class="form-control" id="txtcategory">
+</div>
+<div class="row m-3 justify-content-around">
+  
+<button class="btn btn-success col-3" 
+id="btndeletecategory" data-bs-target="#mo" data-bs-toggle="modal"
+
+>Delete</button>
+<button class="btn btn-primary col-3 " id="btnaddcategory">Add</button>
+<!-- Modal -->
+<div class="modal fade" data-bs-backdrop="static" id="mo">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+    <p class="text-center text-primary">All Category</p>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body table-responsive">
+            <table class="table" >
+                <thead>
+                    <tr >
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Delete</th>
+                      
+                    </tr>
+                </thead>
+                <tbody id="showCatInModat">
+       
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+        
+          <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+    
+    </div><!-- Modal -->
+    
+
+</div>
+</div><!-- category -->
+<div class="product row p-2"><!-- product -->
+ <div class="col-12">
+    <label >Product</label>
+    <input type="text" class="form-control" id="txtproduct">
+ </div>
+ <div class="col-4">
+    <label >Price</label>
+    <input type="number" class="form-control"  id="txtprice">
+</div>
+    <div class="col-4">
+        <label >Quantity</label>
+    <input type="number" class="form-control"  id="txtquantity">
+    </div>
+  
+<div class="col-4">
+    <label >Discount</label>
+    <input type="number" class="form-control"  id="txtdiscount">
+</div>
+<div class="col-4 m-auto d-flex mt-4">
+    <label class="mx-2" >Total</label>
+    <input type="number"  readonly class="form-control" id="txttotal">
+</div>
+<div class="row m-3 justify-content-around">
+    <!-- <button class="btn btn-info col-3" >Print</button> -->
+   
+
+    <button class="btn btn-success col-3"  id="btnclearall">Clear</button>
+    <button class="btn btn-primary col-3" id="btnaddproduct" >Add</button>
+
+</div>
+
+</div><!-- product -->
+
+
+
+<div class="showdataintable mt-4 table-responsive"><!-- showdataintable -->
+   <table class="table tabel-hover table-striped tale-border table-responsive" id="example">
+    <thead>
+<tr>
+    <th>ID</th>
+    <th>Category</th>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Quantity</th>
+   
+    <th>Discount</th>
+    <th>Total</th>
+    <th> <button class="btn btn-primary">Edit</button></th>
+    <th><button class="btn btn-danger">Delete</button></th>
+    
+</tr>   
+    </thead>
+    <tbody id="tbodyproduct">
+    
+     
+    </tbody>
+   </table> 
+</div><!-- showdataintable -->
+        </div> <!-- container -->
+    </main>  <!-- main -->
+    <footer>  <!-- footer -->
+<p class="text-center bg-success p-5 fs-2">All Rights  Recived </p>
+     
+    </footer>  <!-- footer -->
+
+
+
+
+ <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link href="css/toastr.min.css" rel="stylesheet">
+
+    <script src="js/toastr.min.js"></script>
+    
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/Category.js"></script>
+
+    <script src="js/Product.js"></script>
+
+
+    <script src="js/Helper.js"></script>
+
+
+   
+</body>
+</html>
